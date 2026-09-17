@@ -86,6 +86,7 @@ colours the ground, places the trees, the shrubs, the sedge and the fallen logs.
 | `src/sky.ts` | time of day, weather, sun, moon phases, clouds, rain, fog |
 | `src/cars.ts` | vehicle types, traffic, driver perception and reactions, damage, boats |
 | `src/moose.ts` | ragdoll moose, lofted anatomy, antlers, gait, injuries, stand-up |
+| `src/animals.ts` | ambient deer, foxes, hares and a grouse flock that graze, wander and flee |
 | `src/audio.ts` | ambience, engines with doppler, crashes, hooves, body sounds |
 | `src/report.ts` | newspaper composition and page filler, in Finnish |
 | `src/input.ts` | keyboard and pointer lock |

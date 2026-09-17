@@ -5,6 +5,7 @@ import { buildTerrain, groundHeight, surfaceHeight, START, START_OFFSET, FENCE_Z
 import { Sky, type Weather } from './sky';
 import { Traffic, carMaterials } from './cars';
 import { Moose } from './moose';
+import { Animals } from './animals';
 import { GameAudio } from './audio';
 import { compose, classifieds, pageFiller, conditions, MASTHEAD, type VehicleIncident, type Incident } from './report';
 import type { Vehicle } from './cars';
@@ -54,6 +55,7 @@ async function main() {
   const audio = new GameAudio();
   const traffic = new Traffic(scene, world, audio);
   const moose = new Moose(scene, world);
+  const animals = new Animals(scene);
   const input = new Input(renderer.domElement);
 
   // compile every material up front so spawns and first rain do not stall
@@ -139,6 +141,7 @@ async function main() {
 
   const reset = () => {
     traffic.reset();
+    animals.reset();
     const sx = Number(params.get('x') ?? START.x), sz = laneZ(sx, Number(params.get('off') ?? START_OFFSET));
     moose.root.set(sx, groundHeight(sx, sz), sz);
     moose.yaw = Math.PI / 2;
@@ -506,6 +509,7 @@ async function main() {
     chaos = moose.launched || (visible && Math.abs(roadOffset(torso.x, torso.z)) < 9);
     const mooseVel = state === 'run' ? runVel.clone().setY(airVy) : moose.velocity;
     if (!frozen) traffic.update(sdt, { pos: torso, vel: mooseVel, visible }, sky.isNight, sky.wetness, sky.wind, camera.position, sky.hour);
+    if (!frozen) animals.update(sdt, torso);
 
     if (wasted && slowmo <= 0 && !hud.wasted.classList.contains('hidden')) {
       hud.wasted.classList.add('hidden');
