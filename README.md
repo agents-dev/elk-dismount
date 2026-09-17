@@ -94,3 +94,21 @@ Design notes (in Finnish) live in `docs/plans/`. HUD colours and type follow `DE
 Fixed views for screenshots: `?cam=2&hour=17.5&weather=sunny&pitch=-3&yaw=8&x=-200&off=1.75`.
 
 **Press Enter. The traffic is not your friend.**
+
+<!-- omgithub:readme:start -->
+## 🚀 Build, play, and remix with OMGithub
+
+**Remixed using [OMGithub.com](https://omgithub.com).**
+
+[![OMGithub](https://img.shields.io/badge/OMGithub-Open%20project-orange?style=for-the-badge)](https://omgithub.com/agents-dev/elk-dismount)
+[![GitHub](https://img.shields.io/badge/GitHub-Source-181717?logo=github&style=for-the-badge)](https://github.com/agents-dev/elk-dismount)
+
+- 🎮 [Open the project](https://omgithub.com/agents-dev/elk-dismount).
+- ✨ [Remix this project](https://omgithub.com/?remix=agents-dev%2Felk-dismount).
+- 💻 [Explore the source](https://github.com/agents-dev/elk-dismount).
+- 🛠️ [Check build runs](https://github.com/agents-dev/elk-dismount/actions).
+- 🐛 [Report an issue](https://github.com/agents-dev/elk-dismount/issues).
+- 👤 [Explore the creator's projects](https://omgithub.com/agents-dev).
+- 🌍 [Create with OMGithub](https://omgithub.com).
+- 🧬 [Explore the remix source](https://github.com/thevangelist/elk-dismount/tree/151e9ce0b64137336f789fb9bad3064c711bdc44).
+<!-- omgithub:readme:end -->
